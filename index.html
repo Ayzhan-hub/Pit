@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian</title>
+    <style>
+      #main {
+        display: grid;
+        width: 748px;
+        height: 748px;
+        grid-template-areas:
+          "one   two  two  two"
+          "three four four nine"
+          "three four four five"
+          "six  seven eight five";
+        grid-template-rows: 414px 130px 1fr 20px;
+        grid-template-columns: 320px 198px 153px 50px;
+        color: transparent;
+        gap: 9px;
+        background-color: black;
+      }
+
+      #main > .one {
+        grid-area: one;
+        background-color: #e72f24;
+      }
+
+      #main > .two {
+        grid-area: two;
+        background-color: #f0f1ec;
+      }
+
+      #main > .three {
+        grid-area: three;
+        background-color: #f0f1ec;
+      }
+
+      #main > .four {
+        grid-area: four;
+        background-color: #f0f1ec;
+      }
+
+      #main > .five {
+        grid-area: five;
+        background-color: #f0f1ec;
+      }
+
+      #main > .six {
+        grid-area: six;
+        background-color: #f0f1ec;
+      }
+
+      #main > .seven {
+        grid-area: seven;
+        background-color: #f9d01e;
+      }
+
+      #main > .eight {
+        grid-area: eight;
+        background-color: #232629;
+      }
+
+      #main > .nine {
+        grid-area: nine;
+        background-color: #004592;
+        border-bottom: 10px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="main">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+      <div class="seven">7</div>
+      <div class="eight">8</div>
+      <div class="nine">9</div>
+    </section>
+  </body>
+</html>
